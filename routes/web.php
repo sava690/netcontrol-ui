@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\TelnetController;
-use App\Http\Controllers\AlertController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,5 +25,3 @@ Route::post('/add/device',[FormController::class,'add_device']);
 Route::post('/add/param',[FormController::class,'add_param']);
 Route::get('/delete_device/{device_id}',[FormController::class,'delete_device']);
 Route::get('/telnet',[TelnetController::class,'index']);
-
-Route::get('/alert',[AlertController::class,'add_annotation']);
